@@ -1,125 +1,285 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Himesh Ganorkar | Freelance Web Developer</title>
-    <meta name="description" content="Portfolio of Himesh Ganorkar, freelance web developer building modern websites for small businesses.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRniNp3z5cmGEiTSMaCxz2rzo3D5KQlTdvsCQ&s">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Himesh Ganorkar — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Lora:wght@400;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
 
-<div class="cursor"></div>
-<div class="cursor-follower"></div>
-
-<header class="main-header">
-    <nav class="navbar">
-        <div class="logo">Himesh Ganorkar</div>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-    <div class="hero" id="hero">
-        <h1>Himesh Ganorkar</h1>
-        <p> Web Developer | AI Enthusiast | Building Strong CS Fundamentals </p>
-        <a href="#contact" class="hero-btn">Let’s Connect</a>
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">HG</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </div>
-</header>
+  </nav>
 
-<section class="about" id="about">
-    <h2>About Me</h2>
-    <p>
-        Second-year B.Tech CSE student at Shri Ramdeobaba University, Nagpur.
-        Strong foundation in programming and data structures.
-        Interested in Artificial Intelligence and real-world system design.
-        Focused on consistent growth and core skill development.
-    </p>
-</section>
-
-<section class="skills" id="skills">
-    <h2>Skills</h2>
-    <div class="skill-box">
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>JavaScript</span>
-        <span>Java</span>
-        <span>Python</span>
-        <span>Data Structures</span>
-        <span>Tableau & Power BI</span>
+  <!-- Home -->
+  <section class="section home-section" id="home">
+    <div class="container home-content">
+      <p class="home-greeting">Hi, I'm 👋</p>
+      <h1 class="home-name">Himesh Ganorkar</h1>
+      <p class="home-role">B.Tech CSE Student &nbsp;·&nbsp; AI Enthusiast &nbsp;·&nbsp; Building Strong CS Fundamentals</p>
+      <p class="home-location"><i class="fa-solid fa-location-dot"></i> &nbsp;Nagpur, Maharashtra, India</p>
+      <div class="home-cta">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-outline">Contact Me</a>
+      </div>
+      <div class="home-socials">
+        <a href="https://www.linkedin.com/in/himeshganorkar/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://github.com/Ganorkarhimesh" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://youtube.com/@CampusPerkss" target="_blank" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+      </div>
     </div>
-</section>
+  </section>
 
-<section class="education" id="education">
-    <h2>Education</h2>
-    <div class="card">
-        <h3>B.Tech CSE (2024–2028)</h3>
-        <p>Shri Ramdeobaba University, Nagpur</p>
-    </div>
-    <div class="card">
-        <h3>12th Science (2022–2024)</h3>
-        <p>Shri Pandarinath Junior College</p>
-    </div>
-    <div class="card">
-        <h3>10th (2016–2022)</h3>
-        <p>Banarasidas Ruiya High School</p>
-    </div>
-</section>
-
-<section class="projects" id="projects">
-    <h2>Projects</h2>
-
-    <div class="project-grid">
-        <div class="project-card single-project">
-            <h3>All Projects Available at My GitHub</h3>
-            <p>Explore my complete collection of programming, web development and data structure projects.</p>
-            <a href="https://github.com/Ganorkarhimesh" target="_blank">
-                <i class="fab fa-github"></i> Visit GitHub
-            </a>
+  <!-- About -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title">About</h2>
+      <div class="about-content">
+        <p>
+          I'm a first-year Computer Science Engineering student at Shri Ramdeobaba University, Nagpur. I started coding out of curiosity and quickly got into web development and programming fundamentals.
+        </p>
+        <p>
+          Right now I'm focused on getting my CS basics solid — Data Structures, Algorithms, and building real projects. I'm particularly interested in how AI works, which is what keeps me reading and building.
+        </p>
+        <p>
+          Outside academics, I run a YouTube channel called <strong>CampusPerkss</strong> and enjoy sharing useful stuff with students around me.
+        </p>
+        <div class="about-tags">
+          <span>Open Source</span>
+          <span>AI &amp; ML Curious</span>
+          <span>Problem Solver</span>
+          <span>Student Developer</span>
         </div>
+      </div>
     </div>
-</section>
+  </section>
 
-<section class="contact" id="contact">
-    <h2>Connect With Me </h2>
-    <div class="footer-socials">
+  <!-- Skills -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
 
-    <a href="mailto:ganorkarhimesh67@gmail.com" target="_blank" class="social-icon">
-        <i class="fab fa-envelope"></i>
-    </a>
+        <div class="skill-group">
+          <h3 class="skill-group-title">Web</h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <i class="fa-brands fa-html5"></i>
+              <span>HTML</span>
+            </div>
+            <div class="skill-item">
+              <i class="fa-brands fa-css3-alt"></i>
+              <span>CSS</span>
+            </div>
+            <div class="skill-item">
+              <i class="fa-brands fa-js"></i>
+              <span>JavaScript</span>
+            </div>
+            <div class="skill-item">
+              <i class="fa-brands fa-react"></i>
+              <span>React</span>
+            </div>
+          </div>
+        </div>
 
-    <a href="https://www.linkedin.com/in/himeshganorkar/" target="_blank" class="social-icon">
-        <i class="fab fa-linkedin"></i>
-    </a>
+        <div class="skill-group">
+          <h3 class="skill-group-title">Languages</h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <i class="fa-solid fa-code"></i>
+              <span>C++</span>
+            </div>
+            <div class="skill-item">
+              <i class="fa-brands fa-java"></i>
+              <span>Java</span>
+            </div>
+            <div class="skill-item">
+              <i class="fa-brands fa-python"></i>
+              <span>Python</span>
+            </div>
+          </div>
+        </div>
 
-    <a href="https://github.com/Ganorkarhimesh" target="_blank" class="social-icon">
-        <i class="fab fa-github"></i>
-    </a>
+        <div class="skill-group">
+          <h3 class="skill-group-title">CS Fundamentals</h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <i class="fa-solid fa-sitemap"></i>
+              <span>Data Structures</span>
+            </div>
+          </div>
+        </div>
 
-    <a href="https://youtube.com/@CampusPerkss" target="_blank" class="social-icon">
-        <i class="fab fa-youtube"></i>
-    </a>
+      </div>
+    </div>
+  </section>
 
-    <a href="https://instagram.com/himeshganorkar_28" target="-blank" class="social-icon">
-        <i class="fab fa-instagram"></i>
-    </a>
+  <!-- Projects -->
+  <section class="section" id="projects">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-top">
+            <i class="fa-brands fa-github project-icon"></i>
+            <a href="https://github.com/Ganorkarhimesh" target="_blank" class="project-link" title="View on GitHub">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+          <h3 class="project-title">All Projects on GitHub</h3>
+          <p class="project-desc">Explore my programming and development projects — ranging from web apps to DSA practice, all available on my GitHub profile.</p>
+          <a href="https://github.com/Ganorkarhimesh" target="_blank" class="project-github-btn">
+            <i class="fa-brands fa-github"></i> View GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-</div>
-</section>
+  <!-- Certificates -->
+  <section class="section section-alt" id="certificates">
+    <div class="container">
+      <h2 class="section-title">Certificates</h2>
+      <div class="certs-grid">
 
-<footer>
-    <p>© 2026 Himesh Ganorkar | All Rights Reserved</p>
-</footer>
+        <div class="cert-card">
+          <div class="cert-icon"><i class="fa-brands fa-java"></i></div>
+          <div class="cert-info">
+            <h3>Java (Basic)</h3>
+            <p>HackerRank</p>
+            <a href="YOUR_JAVA_CERT_LINK_HERE" target="_blank" class="cert-btn">View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
 
-<script src="script.js"></script>
-</body>
-</html>
+        <div class="cert-card">
+          <div class="cert-icon"><i class="fa-solid fa-globe"></i></div>
+          <div class="cert-info">
+            <h3>Web Development</h3>
+            <p>Certificate of Completion</p>
+            <a href="YOUR_WEBDEV_CERT_LINK_HERE" target="_blank" class="cert-btn">View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
 
+        <div class="cert-card">
+          <div class="cert-icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <div class="cert-info">
+            <h3>Foundations of CyberSecurity</h3>
+            <p>Google / Coursera</p>
+            <a href="YOUR_CYBERSEC_CERT_LINK_HERE" target="_blank" class="cert-btn">View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
 
+        <div class="cert-card">
+          <div class="cert-icon"><i class="fa-solid fa-chart-bar"></i></div>
+          <div class="cert-info">
+            <h3>Data Analytics Job Simulation</h3>
+            <p>Forage</p>
+            <a href="YOUR_DATAANALYTICS_CERT_LINK_HERE" target="_blank" class="cert-btn">View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-icon"><i class="fa-brands fa-google"></i></div>
+          <div class="cert-info">
+            <h3>GDG on Campus Solution Challenge</h3>
+            <p>Google Developer Groups</p>
+            <a href="YOUR_GDG_CERT_LINK_HERE" target="_blank" class="cert-btn">View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section class="section" id="education">
+    <div class="container">
+      <h2 class="section-title">Education</h2>
+      <div class="edu-list">
+
+        <div class="edu-item">
+          <div class="edu-dot"></div>
+          <div class="edu-body">
+            <h3>Shri Ramdeobaba University, Nagpur</h3>
+            <p class="edu-degree">B.Tech — Computer Science &amp; Engineering</p>
+            <span class="edu-year">2024 – 2028</span>
+          </div>
+        </div>
+
+        <div class="edu-item">
+          <div class="edu-dot"></div>
+          <div class="edu-body">
+            <h3>Shri Pandarinath Junior College</h3>
+            <p class="edu-degree">12th — Science Stream</p>
+            <span class="edu-year">Completed</span>
+          </div>
+        </div>
+
+        <div class="edu-item">
+          <div class="edu-dot"></div>
+          <div class="edu-body">
+            <h3>Banarasidas Ruiya High School</h3>
+            <p class="edu-degree">10th — Secondary Education</p>
+            <span class="edu-year">Completed</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <p class="contact-intro">I'm open to internships, collaborations, or just a friendly chat about tech. Feel free to reach out.</p>
+
+      <div class="contact-details">
+        <a href="mailto:ganorkarhimesh67@gmail.com" class="contact-row">
+          <i class="fa-solid fa-envelope"></i>
+          <span>ganorkarhimesh67@gmail.com</span>
+        </a>
+        <a href="https://mail.google.com/mail/?view=cm&to=ganorkarhimesh67@gmail.com" target="_blank" class="contact-row">
+          <i class="fa-brands fa-google"></i>
+          <span>Send via Gmail</span>
+        </a>
+        <a href="https://www.linkedin.com/in/himeshganorkar/" target="_blank" class="contact-row">
+          <i class="fa-brands fa-linkedin-in"></i>
+          <span>linkedin.com/in/himeshganorkar</span>
+        </a>
+        <a href="https://github.com/Ganorkarhimesh" target="_blank" class="contact-row">
+          <i class="fa-brands fa-github"></i>
+          <span>github.com/Ganorkarhimesh</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>Designed &amp; built by <strong>Himesh Ganorkar</strong></p>
+      <div class="footer-socials">
+        <a href="https://www.linkedin.com/in/himeshganorkar/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://github.com/Ganorkarhimesh" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://youtube.com/@CampusPerks
