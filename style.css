@@ -330,33 +330,38 @@ img {
   background: var(--card-bg);
   border: 1px solid var(--border);
   border-radius: 8px;
-  padding: 28px;
+  padding: 24px;
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  transition: box-shadow 0.2s, border-color 0.2s;
-  max-width: 440px;
+  gap: 14px;
+  transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
 }
 
 .project-card:hover {
-  box-shadow: 0 4px 14px rgba(0,0,0,0.07);
-  border-color: #bbb;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  border-color: var(--accent);
 }
 
 .project-top {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .project-icon {
-  font-size: 1.8rem;
-  color: var(--text-muted);
+  font-size: 1.6rem;
+  color: var(--accent);
+}
+
+.project-links-top {
+  display: flex;
+  gap: 12px;
 }
 
 .project-link {
   color: var(--text-muted);
-  font-size: 0.9rem;
+  font-size: 1rem;
   transition: color 0.2s;
 }
 
@@ -365,7 +370,7 @@ img {
 }
 
 .project-title {
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 600;
   color: var(--text);
 }
@@ -377,22 +382,58 @@ img {
   flex: 1;
 }
 
-.project-github-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 7px;
-  font-size: 0.82rem;
-  color: var(--accent);
-  font-weight: 500;
-  padding: 7px 14px;
-  border: 1px solid var(--accent);
-  border-radius: 4px;
-  align-self: flex-start;
-  transition: background 0.2s;
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
 }
 
-.project-github-btn:hover {
-  background: var(--accent-light);
+.project-tech span {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  padding: 3px 8px;
+  background: var(--bg-alt);
+  color: var(--text-muted);
+  border-radius: 4px;
+}
+
+.project-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 6px;
+  flex-wrap: wrap;
+}
+
+.project-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 7px 12px;
+  border-radius: 4px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.btn-live {
+  background: var(--accent);
+  color: #fff;
+  border: 1px solid var(--accent);
+}
+
+.btn-live:hover {
+  background: #1e3a5f;
+}
+
+.btn-repo {
+  background: transparent;
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+
+.btn-repo:hover {
+  background: var(--bg-alt);
+  border-color: var(--text-muted);
 }
 
 /* ===========================
@@ -595,7 +636,7 @@ img {
    NAVBAR SCROLLED
 =========================== */
 .navbar.scrolled {
-  box-shadow: 0 1px 8px rgba(0,0,0,0.07);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.07);
 }
 
 /* ===========================
